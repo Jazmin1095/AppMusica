@@ -1,0 +1,23 @@
+<ion-view view-title="Compras">
+
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="play in compras" class="item-avatar">
+        <h2>{{play.title}} </h2>
+        <h3>{{play.artist}}</h3>
+        <img ng-src="{{play.thumb}}">
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+<!--
+          <ion-view view-title="Favorites">
+        <ion-item ng-repeat="playlist in compras" class="item-avatar">
+                <img ng-src="{{playlist.thumb}}" alt="">
+                <h2>{{playlist.title}} </h2>
+                <h3>{{playlist.artist}}</h3>
+              </ion-item>
+</ion-view>
+
+          -->

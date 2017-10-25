@@ -1,0 +1,21 @@
+<ion-view view-title="Albums">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" ui-sref="{{playlist.detalles}}" alt="Play" on-hold="playSound()">
+        <h2>{{playlist.title}} </h2>
+        <h3>{{playlist.artist}}</h3>
+        <img ng-src="{{playlist.thumb}}" alt="">
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+<!--
+      (press)="pressHandler($event)"
+      (press)="playSound()"
+      ng-click="playSound('exampleWord')"
+
+      <ion-item ng-repeat="item in list" on-long-press="itemOnLongPress(item.id)" on-touch-end="itemOnTouchEnd(item.id)">
+{{ item }}
+</ion-item>
+
+-->

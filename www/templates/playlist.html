@@ -1,0 +1,24 @@
+<ion-view view-title="Detalles">
+  <ion-content>
+ 
+    <ion-list ng-repeat="playlist in play" class="center">
+      <h2>{{playlist.title}} </h2>
+      <h3>{{playlist.artist}}</h3>
+      <img ng-src="{{playlist.thumb}}" alt="">
+    </ion-list>
+    <br>
+    <h4 class="center">Canciones del disco</h4>
+    <ion-list>
+      <ion-list ng-repeat="playlist in songs" class="left">
+        <p>{{playlist.song}} {{playlist.duration}} </p>
+      </ion-list>
+    </ion-list>
+    <div class="container">
+      <a class="btn btn-info btn-sm" ng-click="sendFeedback(true)"  > <!--ng-click="sendFeedback(true)"-->
+        <span class="glyphicon glyphicon-shopping-cart" ></span> Buy
+      </a>
+
+    </div>
+  </ion-content>
+
+</ion-view>

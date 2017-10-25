@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.ph {
+    background-image:url(https://cdn-images-1.medium.com/max/1600/1*qhGVQTh-rFNd-SFkDRgF0w.jpeg)
+    no-repeat center;
+  }
+  .center{
+   text-align: center;
+  }
+  
+  .left{
+    text-align: center;
+   }
+   .a, container{
+     text-align: right;
+     
+   }
+   
